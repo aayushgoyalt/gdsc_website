@@ -12,6 +12,7 @@ const Navbar = () => {
         </div>
         <div className="flex gap-20">
             <div className=" cursor-pointer text-gray-600 font-semibold" onClick={() => {navigate('/projects')}}>Projects</div>
+            <div className=" cursor-pointer text-gray-600 font-semibold" onClick={() => {navigate('/trial')}}>TESTING</div>
             <div className=" cursor-pointer text-gray-600 font-semibold" onClick={() => {navigate('/events')}}>Events</div>
             <div className=" cursor-pointer text-gray-600 font-semibold" onClick={() => {navigate('/team')}}>Team</div>
         </div>
