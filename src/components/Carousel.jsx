@@ -1,5 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { membersRow1 } from '../TeamData/EXBO';
+import { membersRow2 } from '../TeamData/Core';
 import logo from '../assets/logo.png'; // Example image
 
 const scrollRight = keyframes`
@@ -37,21 +39,7 @@ const MemberImage = styled.img`
   object-fit: cover; /* Ensure the image covers the area */
 `;
 
-const membersRow1 = [
-  { id: 1, imgSrc: logo },
-  { id: 2, imgSrc: logo },
-  { id: 3, imgSrc: logo },
-  { id: 4, imgSrc: logo },
-  { id: 5, imgSrc: logo },
-];
 
-const membersRow2 = [
-  { id: 6, imgSrc: logo },
-  { id: 7, imgSrc: logo },
-  { id: 8, imgSrc: logo },
-  { id: 9, imgSrc: logo },
-  { id: 10, imgSrc: logo },
-];
 
 // Duplicate the arrays to create an infinite scrolling effect
 const infiniteMembersRow1 = [...membersRow1, ...membersRow1, ...membersRow1];
