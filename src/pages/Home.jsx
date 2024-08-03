@@ -2,6 +2,7 @@ import React from 'react'
 import HeroSection from '../components/HomeComponents/HeroSection'
 import AboutUs from '../components/HomeComponents/AboutUs'
 import OurProjects from '../components/HomeComponents/OurProjects'
+import OurTeam from '../components/HomeComponents/OurTeam'
 
 
 const Home = () => {
@@ -16,7 +17,9 @@ const Home = () => {
         <div className=" mt-20 h-[80vh]">
             <OurProjects/>
         </div>
-
+        <div className=" mt-20 h-[80vh]">
+            <OurTeam/>
+        </div>
     </div>
   )
 }
