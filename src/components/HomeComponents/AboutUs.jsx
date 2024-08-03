@@ -1,9 +1,8 @@
 import React from 'react'
 
-const AboutUs = () => {
+function AboutUs() {
   return (
-    <div className='w-full flex justify-center'>
-        <div className="w-[80%] bg-gray-100 justify-center  rounded-3xl px-20 py-10">
+        <div className="grid w-[80%] m-auto bg-gray-100 justify-center rounded-3xl px-20 py-10">
                 <div className="grid grid-cols-5 items-center gap-36">
                     <div className="col-span-3">
                         <button className='bg-red-500 px-4 py-2 rounded-3xl text-white mb-6'>TL:DR</button>
@@ -24,13 +23,8 @@ const AboutUs = () => {
                             </div>
                         </div>
                     </div>
-
-                    <div className="col-span-2">
-                        IMAGE TO BE PLACED
-                    </div>
                 </div>
             </div>
-    </div>
   )
 }
 

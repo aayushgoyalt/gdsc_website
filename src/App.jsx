@@ -10,7 +10,6 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className=" w-full min-h-screen "> 
       <BrowserRouter>
         <Navbar />
           <Routes>
@@ -22,7 +21,6 @@ function App() {
           </Routes>
         <Footer />
       </BrowserRouter>
-    </div>
   );
 }
 

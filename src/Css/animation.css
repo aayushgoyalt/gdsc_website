@@ -1,0 +1,18 @@
+@keyframes spin { 
+  from { transform: rotate(0deg); } 
+  to { transform: rotate(360deg); } 
+}
+
+@keyframes zoom {
+  50% { scale: 1.5; } 
+}
+
+@keyframes wiggle {
+  15% { transform: rotate(5deg); }
+  30% { transform: rotate(-10deg); }
+  40% { transform: rotate(30deg); }
+  60% { transform: rotate(-30deg); }
+  70% { transform: rotate(10deg); }
+  85% { transform: rotate(-5deg); }
+}
+
