@@ -17,7 +17,7 @@ const Navbar = () => {
             <div className=" cursor-pointer text-gray-600 font-semibold" onClick={() => {navigate('/trial')}}>TESTING</div>
             <div className=" cursor-pointer text-gray-600 font-semibold" onClick={() => {navigate('/events')}}>Events</div>
             <div className=" cursor-pointer text-gray-600 font-semibold" onClick={() => {navigate('/team')}}>Team</div>
-            <button className='bg-black text-white px-8 py-2 rounded-3xl hover:text-black hover:bg-white transition-all hover:border-2 hover:border-black'>Form Link</button>
+            <button className='bg-black text-white px-8 py-2 rounded-3xl hover:text-black hover:bg-white transition-all hover:border-2 hover:border-black' onClick={() => {window.location.href = "https://github.com"}} >Form Link</button>
         </div>
     </div>
     </div>
