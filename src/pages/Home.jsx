@@ -1,5 +1,8 @@
 import React from 'react'
-import HeroSection from '../components/HeroSection'
+import HeroSection from '../components/HomeComponents/HeroSection'
+import AboutUs from '../components/HomeComponents/AboutUs'
+import OurProjects from '../components/HomeComponents/OurProjects'
+
 
 const Home = () => {
   return (
@@ -7,10 +10,12 @@ const Home = () => {
         <div className="herosection">
             <HeroSection />
         </div>
-        <div className="">
-            content
+        <div className="flex w-full justify-center ">
+            <AboutUs/>
         </div>
-
+        <div className=" mt-20 h-[80vh]">
+            <OurProjects/>
+        </div>
 
     </div>
   )
