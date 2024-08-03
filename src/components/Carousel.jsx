@@ -19,26 +19,32 @@ const CarouselContainer = styled.div`
   flex-direction: column;
   overflow: hidden;
   width: 100%;
-  height: 220px; /* Adjust height as needed */
+  height: 300px; /* Adjust height as needed */
 `;
 
 const Row = styled.div`
   display: flex;
   white-space: nowrap;
-  animation: ${props => props.direction === 'right' ? scrollRight : scrollLeft} 20s linear infinite;
+  animation: ${props => props.direction === 'right' ? scrollRight : scrollLeft} 10s linear infinite;
   &:hover {
     animation-play-state: paused; /* Pause animation on hover for better UX */
   }
 `;
 
-const MemberImage = styled.img`
+const ExboImage = styled.img`
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  margin: 10px;
+  border-radius: 20%; /* Optional: for circular images */
+  object-fit: contain; /* Ensure the image covers the area */
+`;
+const CoreImage = styled.img`
   width: 100px; /* Adjust size as needed */
   height: 100px; /* Adjust size as needed */
   margin: 10px;
-  border-radius: 50%; /* Optional: for circular images */
-  object-fit: cover; /* Ensure the image covers the area */
+  border-radius: 20%; /* Optional: for circular images */
+  object-fit: contain; /* Ensure the image covers the area */
 `;
-
 
 
 // Duplicate the arrays to create an infinite scrolling effect
@@ -50,12 +56,12 @@ const Carousel = () => {
     <CarouselContainer>
       <Row direction="right">
         {infiniteMembersRow1.map((member, index) => (
-          <MemberImage key={`${member.id}-${index}`} src={member.imgSrc} alt={`Member ${member.id}`} />
+          <ExboImage key={`${member.id}-${index}`} src={member.imgSrc} alt={`Member ${member.id}`} />
         ))}
       </Row>
       <Row direction="left">
         {infiniteMembersRow2.map((member, index) => (
-          <MemberImage key={`${member.id}-${index}`} src={member.imgSrc} alt={`Member ${member.id}`} />
+          <CoreImage key={`${member.id}-${index}`} src={member.imgSrc} alt={`Member ${member.id}`} />
         ))}
       </Row>
     </CarouselContainer>
